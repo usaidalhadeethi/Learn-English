@@ -82,14 +82,16 @@ export default function SignIn() {
                     control={<Checkbox value="remember" color="primary" />}
                     label="Remember me"
                     />
-                    <Button
-                    type="submit"
-                    fullWidth
-                    variant="contained"
-                    sx={{ mt: 3, mb: 2 }}
-                    >
-                    Log In
-                    </Button>
+                    <RouterLink to="/kelime-ekleme">
+                        <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+                        >
+                        Log In
+                        </Button>
+                    </RouterLink>
                     <Grid container>
                     <Grid item xs>
                         <RouterLink to="/forgot-password" variant="body2">
